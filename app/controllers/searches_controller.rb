@@ -8,7 +8,7 @@ class SearchesController < ApplicationController
       req.params['client_secret'] = '1F5XNMLEO4CSSNGSOYFDYILNZGQIJLKG415AU4W4IXWEZ4TL'
       req.params['v'] = '20160201'
       req.params['near'] = params[:zipcode]
-      req.options.timeout = 0
+      #req.options.timeout = 0
       end
         body = JSON.parse(@resp.body)
         if @resp.success?
