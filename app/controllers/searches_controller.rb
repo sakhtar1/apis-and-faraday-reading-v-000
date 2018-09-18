@@ -20,5 +20,5 @@ class SearchesController < ApplicationController
       rescue Faraday::ConnectionFailed
         @error = "There was a timeout. Please try again."
       end
-    redirect_to search_path
+    redirect_to :search
   end
